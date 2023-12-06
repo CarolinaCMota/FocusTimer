@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+  --click-sound: rgba(2, 121, 157, 1);
+  --bg-cards: rgba(225, 225, 230, 1);
+  --text-color: rgba(50, 50, 56, 1);
+  --backgroud: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+#timer {
+  color: #323238;
+  font-size: 12.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+#controls {
+  justify-content: space-between;
+}
+
+body {
+  background-color: var(--backgroud);
+  color: var(--text-color);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  gap: 17rem
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 4rem;
+  
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.sound {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  height: fit-content;
+  
+}
+
+.sound button {
+  border-radius: 8px;
+  background-color: var(--bg-cards);
+  height: 10rem;
+  width: 10rem;
+  
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+     <script src="./index.js" defer></script>
+     <script src="./sounds.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="app">
+        <section id="timer" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+          <button class="ph-bold ph-play-circle" onclick="onPlay()"></button>
+          <button class="ph-bold ph-stop-circle" onclick="onStop()"></button>
+          <button class="ph-bold ph-plus-circle" onclick="handlePlus()"></button>
+          <button class="ph-bold ph-minus-circle"  onclick="handleMinus()"></button>
+        </section>
+      </div>
+
+      <div class="sound">
+        <button class="ph-bold ph-cloud-rain" onclick="onMusicRain()"></button>
+        <button class="ph-bold ph-tree" onclick="onMusicTree()"></button>
+        <button class="ph-bold ph-storefront" onclick="onMusicCoffe()"></button>
+        <button class="ph-bold ph-flame" onclick="onMusicFire()"></button>
+      </div>
+    </div>
+  </body>
+</html>
